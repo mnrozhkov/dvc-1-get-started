@@ -4,7 +4,7 @@
 ## 1. clone this repository
 
 ```bash
-git clone https://gitlab.com/7labs.ru/tutorials-dvc/dvc-1-get-started.git
+git clone https://github.com/mlrepa/dvc-1-get-started.git
 
 cd dvc-1-get-started
 ```
