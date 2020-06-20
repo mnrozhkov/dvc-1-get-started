@@ -1,0 +1,16 @@
+stages:
+  feature_extraction:
+    cmd: python src/featurization.py
+    deps:
+    - data/iris.csv
+    - src/featurization.py
+    outs:
+    - data/iris_featurized.csv
+  split_dataset:
+    cmd: python src/split_dataset.py --test_size 0.4
+    deps:
+    - data/iris_featurized.csv
+    - src/split_dataset.py
+    outs:
+    - data/test.csv
+    - data/train.csv

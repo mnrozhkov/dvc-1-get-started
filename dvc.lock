@@ -1,0 +1,22 @@
+feature_extraction:
+  cmd: python src/featurization.py
+  deps:
+  - path: data/iris.csv
+    md5: 4d301abed5efe50eccda350cde38e0eb
+  - path: src/featurization.py
+    md5: 81128c594b67a68c3aecd2d9eca38d9c
+  outs:
+  - path: data/iris_featurized.csv
+    md5: 4d301abed5efe50eccda350cde38e0eb
+split_dataset:
+  cmd: python src/split_dataset.py --test_size 0.4
+  deps:
+  - path: data/iris_featurized.csv
+    md5: 4d301abed5efe50eccda350cde38e0eb
+  - path: src/split_dataset.py
+    md5: 88088a01cd93e24b8621bb35e4c073a1
+  outs:
+  - path: data/test.csv
+    md5: ff90f4d78575aaf2f280f585d521d3be
+  - path: data/train.csv
+    md5: 2a374d1cbcb489fe1656e59a6c30c636
