@@ -1,10 +1,10 @@
 
 # Preparation
 
-## 1. clone this repository
+## 1. Clone this repository
 
 ```bash
-git clone https://gitlab.com/7labs.ru/tutorials-dvc/dvc-1-get-started.git
+git clone git@github.com:mnrozhkov/dvc-1-get-started.git
 cd dvc-1-get-started
 ```
 
